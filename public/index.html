@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz AI Terbaik</title>
+  <link rel="stylesheet" href="style/main.css" />
+</head>
+<body>
+  <div class="login-container">
+  <img src="assets/logo.png" alt="Logo Quiz" class="quiz-logo" />
+    <h1 class="game-title">QN</h1>
+    <form id="start-form">
+      <input type="text" id="playerName" placeholder="Masukkan Nama Kamu" required />
+      <select id="subjectSelect" required>
+        <option value="">Pilih Mata Pelajaran</option>
+        <option value="matematika">Matematika</option>
+        <option value="bahasa_inggris">Bahasa Inggris</option>
+      </select>
+      <button type="submit">Mulai Quiz</button>
+    </form>
+  </div>
+
+ <script>
+  document.getElementById('start-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const name = document.getElementById('playerName').value;
+    const subject = document.getElementById('subjectSelect').value;
+
+    localStorage.setItem("playerName", name);
+    localStorage.setItem("quizSubject", subject);
+
+    window.location.href = 'quiz.html';
+  });
+</script>
+</body>
+</html>

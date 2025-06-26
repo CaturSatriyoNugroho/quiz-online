@@ -1,0 +1,159 @@
+/* === Neon Blue + Black Theme === */
+:root {
+  --primary: #00ffff;
+  --accent: #004e92;
+  --danger: #ff4d4d;
+  --bg-dark: #000000;
+  --bg-light: #0a0a0a;
+  --white: #ffffff;
+  --gray: #ccc;
+}
+
+/* === Global === */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, var(--bg-dark), var(--accent));
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* === Container Login & Quiz === */
+.login-container,
+.game-wrapper {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 2rem 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 30px var(--primary);
+  width: 90%;
+  max-width: 480px;
+  text-align: center;
+}
+
+/* === Judul === */
+.game-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary);
+  text-shadow: 0 0 10px var(--primary), 0 0 20px var(--accent);
+  margin-bottom: 1rem;
+}
+
+/* === Input & Select === */
+input[type="text"],
+select {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 2px solid var(--primary);
+  border-radius: 0.5rem;
+  background-color: var(--bg-light);
+  color: var(--white);
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+/* === Tombol === */
+button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background-color: var(--accent);
+  color: var(--white);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px var(--accent);
+}
+
+button:hover {
+  background-color: var(--primary);
+  color: #000;
+  box-shadow: 0 0 20px var(--primary);
+}
+
+/* === Soal & Opsi === */
+.question-text {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.2rem;
+}
+
+.option-btn {
+  background-color: transparent;
+  color: var(--white);
+  border: 2px solid var(--primary);
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.option-btn:hover {
+  background-color: var(--primary);
+  color: #000;
+  box-shadow: 0 0 10px var(--primary);
+}
+
+/* === Hasil Jawaban === */
+.correct {
+  background-color: var(--primary);
+  color: #000;
+  border-color: var(--primary);
+  box-shadow: 0 0 10px var(--primary);
+}
+
+.wrong {
+  background-color: var(--danger);
+  color: #fff;
+  border-color: var(--danger);
+  box-shadow: 0 0 10px var(--danger);
+}
+
+/* === Responsive Text === */
+@media (max-width: 500px) {
+  .game-title {
+    font-size: 2rem;
+  }
+
+  .question-text {
+    font-size: 1.1rem;
+  }
+}
+
+.quiz-logo {
+  width: 200px;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(0 0 10px cyan);
+  border-radius: 1rem; /* Sudut tumpul */
+}
+.result-box {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 1rem;
+  box-shadow: 0 0 20px cyan;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
