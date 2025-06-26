@@ -15,11 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const optionsContainer = document.getElementById('options');
   const nextButton = document.getElementById('next-btn');
 
-  // Tambahkan audio
-  const correctSound = new Audio('sounds/correct.mp3');
-  const wrongSound = new Audio('sounds/wrong.mp3');
-  const victorySound = new Audio('sounds/victory.mp3');
-  const loseSound = new Audio('sounds/lose.mp3');
+const correctSound = new Audio('assets/sounds/correct.mp3');
+const wrongSound = new Audio('assets/sounds/wrong.mp3');
+const victorySound = new Audio('assets/sounds/victory.mp3');
+const loseSound = new Audio('assets/sounds/lose.mp3');
+
 
   let currentIndex = 0;
   let score = 0;
