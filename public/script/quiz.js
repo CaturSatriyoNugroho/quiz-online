@@ -15,6 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const optionsContainer = document.getElementById('options');
   const nextButton = document.getElementById('next-btn');
 
+  // Tambahkan audio
+  const correctSound = new Audio('sounds/correct.mp3');
+  const wrongSound = new Audio('sounds/wrong.mp3');
+  const victorySound = new Audio('sounds/victory.mp3');
+  const loseSound = new Audio('sounds/lose.mp3');
+
   let currentIndex = 0;
   let score = 0;
 
@@ -43,9 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (button.textContent === correctAnswer) {
       button.classList.add('correct');
+      correctSound.play();
       score++;
     } else {
       button.classList.add('wrong');
+      wrongSound.play();
       buttons.forEach(btn => {
         if (btn.textContent === correctAnswer) btn.classList.add('correct');
       });
@@ -72,15 +80,19 @@ document.addEventListener('DOMContentLoaded', () => {
     if (percentage === 100) {
       message = "🏆 Sempurna! Kamu jenius!";
       color = "lime";
+      victorySound.play();
     } else if (percentage >= 70) {
       message = "🔥 Bagus banget! Kamu hampir sempurna.";
       color = "aqua";
+      victorySound.play();
     } else if (percentage >= 40) {
       message = "⚠️ Lumayan, bisa lebih baik!";
       color = "orange";
+      loseSound.play();
     } else {
       message = "😢 Jangan menyerah! Coba lagi ya.";
       color = "red";
+      loseSound.play();
     }
 
     questionBox.innerHTML = `
@@ -95,4 +107,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
   loadQuestion();
 });
-
