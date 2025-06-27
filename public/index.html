@@ -7,8 +7,10 @@
   <link rel="stylesheet" href="style/main.css" />
 </head>
 <body>
+  <audio id="homeBgm" src="assets/sounds/home.mp3" loop></audio>
+
   <div class="login-container">
-  <img src="assets/logo.png" alt="Logo Quiz" class="quiz-logo" />
+    <img src="assets/logo.png" alt="Logo Quiz" class="quiz-logo" />
     <h1 class="game-title">QN</h1>
     <form id="start-form">
       <input type="text" id="playerName" placeholder="Masukkan Nama Kamu" required />
@@ -21,17 +23,28 @@
     </form>
   </div>
 
- <script>
-  document.getElementById('start-form').addEventListener('submit', function (e) {
-    e.preventDefault();
-    const name = document.getElementById('playerName').value;
-    const subject = document.getElementById('subjectSelect').value;
+  <script>
+    const homeBgm = document.getElementById('homeBgm');
 
-    localStorage.setItem("playerName", name);
-    localStorage.setItem("quizSubject", subject);
+    document.addEventListener('DOMContentLoaded', () => {
+      // Play backsound saat user klik pertama kali
+      document.body.addEventListener('click', () => {
+        if (homeBgm.paused) homeBgm.play();
+      }, { once: true });
 
-    window.location.href = 'quiz.html';
-  });
-</script>
+      // Form start
+      document.getElementById('start-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const name = document.getElementById('playerName').value;
+        const subject = document.getElementById('subjectSelect').value;
+
+        localStorage.setItem("playerName", name);
+        localStorage.setItem("quizSubject", subject);
+
+        homeBgm.pause();
+        window.location.href = 'quiz.html';
+      });
+    });
+  </script>
 </body>
 </html>

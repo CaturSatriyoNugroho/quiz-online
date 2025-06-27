@@ -15,17 +15,35 @@ document.addEventListener('DOMContentLoaded', () => {
   const optionsContainer = document.getElementById('options');
   const nextButton = document.getElementById('next-btn');
 
-const correctSound = new Audio('assets/sounds/correct.mp3');
-const wrongSound = new Audio('assets/sounds/wrong.mp3');
-const victorySound = new Audio('assets/sounds/victory.mp3');
-const loseSound = new Audio('assets/sounds/lose.mp3');
-
+  const correctSound = new Audio('assets/sounds/correct.mp3');
+  const wrongSound = new Audio('assets/sounds/wrong.mp3');
+  const victorySound = new Audio('assets/sounds/victory.mp3');
+  const loseSound = new Audio('assets/sounds/lose.mp3');
+  const quizBgm = document.getElementById('quizBgm'); // ambil elemen audio dari quiz.html
 
   let currentIndex = 0;
   let score = 0;
 
   // Acak soal
   const selectedQuestions = [...questions[subject]].sort(() => Math.random() - 0.5);
+
+  // 🔢 Countdown 3 detik sebelum quiz dimulai
+  const countdownEl = document.getElementById("countdown");
+  let count = 3;
+  countdownEl.textContent = count;
+
+  const countdownInterval = setInterval(() => {
+    count--;
+    if (count > 0) {
+      countdownEl.textContent = count;
+    } else {
+      clearInterval(countdownInterval);
+      countdownEl.style.display = "none";
+      questionBox.style.display = "block";
+      quizBgm.play();
+      loadQuestion(); // mulai quiz setelah countdown
+    }
+  }, 1000);
 
   function loadQuestion() {
     const q = selectedQuestions[currentIndex];
@@ -104,6 +122,4 @@ const loseSound = new Audio('assets/sounds/lose.mp3');
       </div>
     `;
   }
-
-  loadQuestion();
 });
