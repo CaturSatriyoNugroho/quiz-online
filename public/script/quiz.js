@@ -90,6 +90,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   function showResult() {
+    quizBgm.pause();
+    quizBgm.currentTime = 0;
+
     let message = "";
     let color = "";
 
