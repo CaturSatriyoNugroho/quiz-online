@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const name = localStorage.getItem("playerName") || "Pemain";
-  const subject = localStorage.getItem("subjectName") || "Tidak diketahui";
+  const subject = localStorage.getItem("quizSubject") || "Tidak diketahui";
   const score = localStorage.getItem("finalScore") || 0;
   const total = localStorage.getItem("totalQuestions") || 0;
   const percentage = parseFloat(localStorage.getItem("percentageScore")) || 0;
