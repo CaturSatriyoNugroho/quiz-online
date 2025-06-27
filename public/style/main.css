@@ -132,15 +132,13 @@ button:hover {
 /* 🏁 Result Page         */
 /* ====================== */
 .result-box h2,
-.result-box p {
-  color: #00bfff;
-  text-shadow: 0 0 10px #00bfff;
+.result-box p,
+.result-box h1 {
+  text-shadow: 0 0 10px currentColor, 0 0 20px currentColor;
 }
 
 .result-box h1 {
   font-size: 3rem;
-  color: #00bfff;
-  text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff;
 }
 
 .result-box button {
@@ -158,3 +156,4 @@ button:hover {
   background: white;
   color: #004e92;
 }
+
