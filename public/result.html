@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hasil Quiz</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hasil Kuis</title>
+  <link rel="stylesheet" href="style/main.css" />
 </head>
 <body>
-  <audio id="resultSound" autoplay></audio>
+  <audio id="resultBgm" src="" autoplay></audio>
 
-  <div class="result-container">
-    <div class="result-box">
-      <img src="assets/logo.png" alt="Logo" class="result-logo" />
-      <h2 id="resultName"></h2>
-      <p id="resultMapel"></p>
-      <h1 id="resultScore"></h1>
-      <p id="resultMessage"></p>
-      <button onclick="window.location.href='index.html'">Main Lagi</button>
+  <div class="login-container result-box">
+    <img src="assets/logo.png" alt="Logo Quiz" class="quiz-logo" />
+    
+    <div style="margin-top: 1rem;">
+      <h2 style="margin-bottom: 0.5rem;">
+        Selamat, <strong id="player-name">Pemain</strong>!
+      </h2>
+      <p style="margin-bottom: 1rem;">
+        Mapel: <span id="subject-name">-</span>
+      </p>
+      <h1 id="score-display" style="font-size: 3rem; margin: 1rem 0;">0 / 0</h1>
+      <p id="message-text" style="font-size: 1.2rem; font-weight: bold;"></p>
     </div>
+
+    <button onclick="window.location.href='index.html'" style="margin-top: 1.5rem;">Main Lagi</button>
   </div>
 
-  <script src="result.js"></script>
+  <script src="script/result.js"></script>
 </body>
 </html>
 

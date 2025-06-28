@@ -219,25 +219,7 @@ p {
   box-shadow: 0 0 20px var(--primary);
 }
 
-.result-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: var(--bg-dark);
-  box-shadow: 0 0 25px var(--primary);
-  border-radius: 1rem;
-  padding: 2rem;
-}
 
-.result-box {
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.85);
-  padding: 2rem;
-  border-radius: 1rem;
-  max-width: 500px;
-  width: 100%;
-}
 
 .result-logo {
   width: 150px;
