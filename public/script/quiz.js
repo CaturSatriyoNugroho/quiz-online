@@ -118,23 +118,24 @@ function showResult() {
       🎉 Kuis Selesai!
     </h2>
 
-    <div style="margin-top: 1.5rem;">
-      <button onclick="window.location.href='result.html'" style="
-        padding: 0.9rem 2rem;
-        font-size: 1rem;
-        font-weight: bold;
-        border-radius: 0.5rem;
-        background-color: var(--accent);
-        color: white;
-        border: none;
-        box-shadow: 0 0 15px var(--primary);
-        cursor: pointer;
-        transition: all 0.3s ease;
-      ">
-        👀 Lihat Skor
-      </button>
-    </div>
-  </div>
+   <div style="margin-top: 1.5rem;">
+  <button onclick="window.location.href='result.html'" style="
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    background: var(--accent);
+    color: white;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 15px var(--primary); /* Hanya glowing luar */
+    cursor: pointer;
+    transition: all 0.3s ease;
+  ">
+    👀 Lihat Skor
+  </button>
+</div>
+
 `;
 
 }
