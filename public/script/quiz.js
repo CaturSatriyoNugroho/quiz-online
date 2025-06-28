@@ -100,15 +100,14 @@ function showResult() {
   localStorage.setItem("totalQuestions", selectedQuestions.length);
 
  questionBox.innerHTML = `
-  <div class="result-box" style="
-    text-align: center;
-    padding: 2.5rem;
-    border-radius: 1rem;
-    box-shadow: 0 0 20px var(--primary);
-    background-color: rgba(0, 0, 0, 0.85);
-    max-width: 500px;
-    margin: 0 auto;
-  ">
+<div class="result-box" style="
+  text-align: center;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.85);
+  max-width: 500px;
+  margin: 0 auto;
+">
     <h2 style="
       font-size: 2.2rem;
       margin-bottom: 2rem;
