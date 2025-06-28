@@ -1,8 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const resultBgm = document.getElementById('resultBgm');
+  document.body.addEventListener('click', () => {
+    if (resultBgm.paused) resultBgm.play();
+  }, { once: true });
+
   const name = localStorage.getItem("playerName") || "Pemain";
   const subject = localStorage.getItem("quizSubject") || "-";
   const score = parseInt(localStorage.getItem("finalScore")) || 0;
   const total = parseInt(localStorage.getItem("totalQuestions")) || 10;
+
+  // ...lanjut dengan logika tampil hasil
+
 
   // Format teks mapel: dari bahasa_inggris → Bahasa Inggris
   const formattedSubject = subject.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
