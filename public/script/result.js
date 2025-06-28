@@ -1,43 +1,40 @@
 document.addEventListener('DOMContentLoaded', () => {
   const name = localStorage.getItem("playerName") || "Pemain";
-  const score = parseInt(localStorage.getItem("finalScore")) || 0;
-  const total = parseInt(localStorage.getItem("totalQuestions")) || 0;
-  const percentage = (score / total) * 100 || 0;
   const subject = localStorage.getItem("quizSubject") || "-";
+  const score = parseInt(localStorage.getItem("finalScore")) || 0;
+  const total = parseInt(localStorage.getItem("totalQuestions")) || 10;
 
-  const resultBox = document.getElementById("result-box");
-  const resultSound = document.getElementById("resultSound");
+  // Format teks mapel: dari bahasa_inggris → Bahasa Inggris
+  const formattedSubject = subject.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
 
-  let message = "", color = "", sound = "";
+  const percent = (score / total) * 100;
+  let message = "", icon = "", color = "";
 
-  if (percentage === 100) {
-    message = "🏆 Sempurna! Kamu jenius!";
+  if (percent === 100) {
+    message = "Sempurna! Kamu jenius!";
+    icon = "🏆";
     color = "lime";
-    sound = "victory.mp3";
-  } else if (percentage >= 70) {
-    message = "🔥 Bagus banget! Kamu hampir sempurna.";
+  } else if (percent >= 70) {
+    message = "Bagus banget! Kamu hampir sempurna.";
+    icon = "🔥";
     color = "aqua";
-    sound = "victory.mp3";
-  } else if (percentage >= 40) {
-    message = "⚠️ Lumayan, bisa lebih baik!";
+  } else if (percent >= 40) {
+    message = "Lumayan, bisa lebih baik!";
+    icon = "⚠️";
     color = "orange";
-    sound = "lose.mp3";
   } else {
-    message = "😢 Jangan menyerah! Coba lagi ya.";
+    message = "Jangan menyerah! Coba lagi ya.";
+    icon = "😢";
     color = "red";
-    sound = "lose.mp3";
   }
 
-  resultSound.src = `assets/sounds/${sound}`;
-  resultSound.play();
-
-  resultBox.innerHTML = `
-    <h2 style="color: ${color};">Selamat, <strong>${name}</strong>!</h2>
-    <p>Mapel: <strong>${subject}</strong></p>
-    <p style="margin-bottom: 0.5rem;">${message}</p>
-    <h1 style="font-size: 3rem; margin: 1rem 0; color: ${color};">${score} / ${total}</h1>
-    <button onclick="window.location.href='index.html'">Main Lagi</button>
-  `;
+  document.getElementById("player-name").textContent = name.toUpperCase();
+  document.getElementById("subject-name").textContent = formattedSubject;
+  document.getElementById("message-icon").textContent = icon;
+  document.getElementById("result-message").textContent = message;
+  document.getElementById("score-display").textContent = `${score} / ${total}`;
+  document.getElementById("score-display").style.color = color;
 });
+
 
 

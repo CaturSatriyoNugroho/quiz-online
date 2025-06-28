@@ -2,17 +2,19 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hasil Quiz</title>
   <link rel="stylesheet" href="style/main.css" />
 </head>
 <body>
-  <audio id="resultSound" autoplay></audio>
-
-  <div id="result-box" class="result-box">
-    <!-- Hasil quiz akan dimuat lewat JS -->
+  <div class="result-box">
+    <h2>Selamat, <strong id="player-name"></strong>!</h2>
+    <p>Mapel: <span id="subject-name"></span> <span id="message-icon"></span> <span id="result-message"></span></p>
+    <h1 id="score-display"></h1>
+    <button onclick="window.location.href='index.html'">Main Lagi</button>
   </div>
 
   <script src="script/result.js"></script>
 </body>
 </html>
+
