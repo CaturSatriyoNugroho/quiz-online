@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const scoreEl = document.getElementById("score-display");
   const messageEl = document.getElementById("message-text");
 
-  nameEl.textContent = playerName;
-  subjectEl.textContent = subject;
+  nameEl.textContent = playerName.toUpperCase();
+  subjectEl.textContent = subject.replace("_", " ");
   scoreEl.textContent = `${score} / ${total}`;
 
   const percentage = (score / total) * 100;
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   resultBgm.src = audioSrc;
   resultBgm.play().catch(() => {
-    console.warn("Auto-play ditolak. User harus interaksi dulu.");
+    console.warn("Audio autoplay ditolak, user harus klik dulu.");
   });
 });
 

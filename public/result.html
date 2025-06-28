@@ -11,16 +11,25 @@
 
   <div class="login-container result-box">
     <img src="assets/logo.png" alt="Logo Quiz" class="quiz-logo" />
-    <h2>Selamat, <strong id="player-name">Pemain</strong>!</h2>
-    <p>Mapel: <strong id="subject-name">-</strong></p>
-    <h1 id="score-display" style="margin: 1rem 0;">0 / 0</h1>
-    <p id="message-text" style="font-size: 1.2rem;"></p>
-    <button onclick="window.location.href='index.html'">Main Lagi</button>
+    
+    <div style="margin-top: 1rem;">
+      <h2 style="margin-bottom: 0.5rem;">
+        Selamat, <strong id="player-name">Pemain</strong>!
+      </h2>
+      <p style="margin-bottom: 1rem;">
+        Mapel: <span id="subject-name">-</span>
+      </p>
+      <h1 id="score-display" style="font-size: 3rem; margin: 1rem 0;">0 / 0</h1>
+      <p id="message-text" style="font-size: 1.2rem; font-weight: bold;"></p>
+    </div>
+
+    <button onclick="window.location.href='index.html'" style="margin-top: 1.5rem;">Main Lagi</button>
   </div>
 
   <script src="script/result.js"></script>
 </body>
 </html>
+
 
 
 

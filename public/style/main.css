@@ -199,3 +199,10 @@ p {
   z-index: 9999;
   animation: fadeIn 0.3s ease-in-out;
 }
+.result-box h1 {
+  letter-spacing: 2px;
+}
+
+.result-box p {
+  margin: 0.5rem 0;
+}
