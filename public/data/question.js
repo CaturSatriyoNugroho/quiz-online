@@ -1,106 +1,106 @@
 const questions = {
   matematika: [
     {
-      question: "Berapakah hasil dari 12 + 9?",
-      options: ["19", "20", "21", "22"],
-      answer: "21"
+      question: "Jika f(x) = 2x² - 3x + 1, maka f(3) = ...",
+      options: ["10", "16", "12", "13"],
+      answer: "10"
     },
     {
-      question: "Bilangan ganjil di antara 10 dan 20 adalah...",
-      options: ["11, 13, 15, 17, 19", "11, 12, 13, 14", "12, 14, 16, 18", "10, 12, 14"],
-      answer: "11, 13, 15, 17, 19"
+      question: "Limit dari (x² - 1)/(x - 1) saat x mendekati 1 adalah...",
+      options: ["1", "2", "∞", "2"],
+      answer: "2"
     },
     {
-      question: "Hasil dari 7 x 6 adalah...",
-      options: ["36", "48", "56", "42"],
-      answer: "42"
+      question: "Jika log₅x = 3, maka x = ...",
+      options: ["15", "125", "25", "5"],
+      answer: "125"
     },
     {
-      question: "Luas persegi dengan sisi 8 cm adalah...",
-      options: ["32 cm²", "8 cm²", "64 cm²", "16 cm²"],
-      answer: "64 cm²"
+      question: "Turunan pertama dari f(x) = x³ - 3x² + 2x adalah...",
+      options: ["3x² - 6x + 2", "x² - 6x + 2", "3x² - 3x + 2", "x³ - 3x + 2"],
+      answer: "3x² - 6x + 2"
     },
     {
-      question: "Urutan dari terbesar ke terkecil: 3/4, 2/3, 1/2",
-      options: ["1/2, 2/3, 3/4", "3/4, 2/3, 1/2", "2/3, 1/2, 3/4", "3/4, 1/2, 2/3"],
-      answer: "3/4, 2/3, 1/2"
+      question: "Integral dari ∫2x dx adalah...",
+      options: ["x² + C", "2x² + C", "x + C", "x³ + C"],
+      answer: "x² + C"
     },
     {
-      question: "Hasil dari 81 ÷ 9 adalah...",
-      options: ["8", "6", "9", "7"],
-      answer: "9"
+      question: "Jika A = {1,2,3}, B = {2,3,4}, maka A ∩ B adalah...",
+      options: ["{1,2,3,4}", "{2,3}", "{1,4}", "{1,2}"],
+      answer: "{2,3}"
     },
     {
-      question: "Jika x = 5, maka nilai dari 2x + 3 adalah...",
-      options: ["10", "8", "15", "13"],
-      answer: "13"
+      question: "Diketahui barisan aritmetika dengan U₁ = 5 dan beda = 3. Maka U₁₀ adalah...",
+      options: ["32", "35", "30", "33"],
+      answer: "32"
     },
     {
-      question: "Panjang sisi kubus adalah 4 cm. Berapa volumenya?",
-      options: ["64 cm³", "16 cm³", "48 cm³", "32 cm³"],
-      answer: "64 cm³"
+      question: "Hasil dari (2 + √3)(2 - √3) adalah...",
+      options: ["1", "4", "5", "√3"],
+      answer: "1"
     },
     {
-      question: "Berapa hasil 100 - 45?",
-      options: ["55", "85", "65", "75"],
-      answer: "55"
+      question: "Rata-rata dari 5 angka: 6, 8, 10, 12, x adalah 10. Maka nilai x adalah...",
+      options: ["14", "10", "12", "16"],
+      answer: "14"
     },
     {
-      question: "Sudut segitiga jumlahnya selalu...",
-      options: ["180°", "360°", "90°", "100°"],
-      answer: "180°"
+      question: "Jika sin θ = 3/5 dan θ di kuadran I, maka cos θ adalah...",
+      options: ["4/5", "5/4", "3/4", "1/2"],
+      answer: "4/5"
     }
   ],
   bahasa_inggris: [
     {
-      question: "What is the opposite of 'hot'?",
-      options: ["Spicy", "Warm", "Boil", "Cold"],
-      answer: "Cold"
+      question: "Choose the correct sentence in Past Perfect Tense.",
+      options: ["She had eaten before he arrived.", "She eats before he arrives.", "She was eating when he arrived.", "She is eating before he arrives."],
+      answer: "She had eaten before he arrived."
     },
     {
-      question: "Translate: 'Saya suka membaca buku.'",
-      options: ["I like reading books", "I love the book", "I read a book", "You like to read"],
-      answer: "I like reading books"
+      question: "Identify the error: 'He don't like playing the piano.'",
+      options: ["He", "don't", "like", "playing"],
+      answer: "don't"
     },
     {
-      question: "Which word is a verb?",
-      options: ["Blue", "Quick", "Tall", "Run"],
-      answer: "Run"
+      question: "What is the synonym of 'meticulous'?",
+      options: ["Careless", "Thorough", "Quick", "Lazy"],
+      answer: "Thorough"
     },
     {
-      question: "What is the plural of 'child'?",
-      options: ["Childs", "Children", "Childer", "Childes"],
-      answer: "Children"
+      question: "Which sentence uses the correct conditional structure (Type 3)?",
+      options: ["If I had studied, I would have passed.", "If I study, I will pass.", "If I studied, I would pass.", "If I had studied, I will pass."],
+      answer: "If I had studied, I would have passed."
     },
     {
-      question: "Fill the blank: She ___ playing guitar.",
-      options: ["am", "be", "is", "are"],
-      answer: "is"
+      question: "What is the meaning of the idiom 'beat around the bush'?",
+      options: ["Avoid saying something directly", "Go hunting", "Hit the bush", "Clean the garden"],
+      answer: "Avoid saying something directly"
     },
     {
-      question: "What is the synonym of 'big'?",
-      options: ["Small", "Large", "Short", "Tiny"],
-      answer: "Large"
+      question: "Complete the sentence: 'Had she known the answer, she ____ it earlier.'",
+      options: ["tells", "told", "would have told", "will tell"],
+      answer: "would have told"
     },
     {
-      question: "Which one is a fruit?",
-      options: ["Table", "Box", "Chair", "Apple"],
-      answer: "Apple"
+      question: "Which one is an example of a gerund?",
+      options: ["Swimming is fun.", "Swim fast!", "I will swim.", "To swim is healthy."],
+      answer: "Swimming is fun."
     },
     {
-      question: "What color is the sky on a clear day?",
-      options: ["Red", "Yellow", "Green", "Blue"],
-      answer: "Blue"
+      question: "Select the passive form of: 'They are cleaning the room.'",
+      options: ["The room is cleaned.", "The room is being cleaned.", "They clean the room.", "Cleaning the room is being done."],
+      answer: "The room is being cleaned."
     },
     {
-      question: "He ___ to school every day.",
-      options: ["gone", "going", "goes", "go"],
-      answer: "goes"
+      question: "Find the antonym of 'scarce'.",
+      options: ["Rare", "Few", "Plentiful", "Empty"],
+      answer: "Plentiful"
     },
     {
-      question: "What is 5 in English?",
-      options: ["Fifteen", "Five", "Fifty", "Fifth"],
-      answer: "Five"
+      question: "What is the correct reported speech of: He said, 'I am tired.'",
+      options: ["He said that he was tired.", "He said that he is tired.", "He says he was tired.", "He said he will be tired."],
+      answer: "He said that he was tired."
     }
   ]
 };
