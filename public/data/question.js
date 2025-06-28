@@ -204,5 +204,107 @@ const questions = {
     ],
     answer: "Permukaan kasar dan gaya tekan besar"
   }
+],
+pkn: [
+  {
+    question: "Makna pokok dari sila keempat Pancasila adalah...",
+    options: [
+      "Kebebasan dalam beragama",
+      "Musyawarah untuk mufakat",
+      "Persamaan derajat di mata hukum",
+      "Keadilan sosial bagi seluruh rakyat"
+    ],
+    answer: "Musyawarah untuk mufakat"
+  },
+  {
+    question: "Lembaga yang memiliki kewenangan menguji undang-undang terhadap UUD 1945 adalah...",
+    options: [
+      "DPR",
+      "Presiden",
+      "Mahkamah Agung",
+      "Mahkamah Konstitusi"
+    ],
+    answer: "Mahkamah Konstitusi"
+  },
+  {
+    question: "Kedaulatan rakyat dalam sistem demokrasi Pancasila diwujudkan melalui...",
+    options: [
+      "Pemilihan umum secara langsung",
+      "Kebebasan tanpa batas",
+      "Dominasi mayoritas atas minoritas",
+      "Pembatasan peran partai politik"
+    ],
+    answer: "Pemilihan umum secara langsung"
+  },
+  {
+    question: "Apa fungsi utama konstitusi dalam suatu negara?",
+    options: [
+      "Menentukan agama resmi",
+      "Mengatur hak dan kewajiban warga negara serta struktur pemerintahan",
+      "Mengatur hubungan antar negara",
+      "Membatasi kebebasan berpendapat"
+    ],
+    answer: "Mengatur hak dan kewajiban warga negara serta struktur pemerintahan"
+  },
+  {
+    question: "Salah satu bentuk pelanggaran HAM berat menurut UU No. 26 Tahun 2000 adalah...",
+    options: [
+      "Pencurian",
+      "Penganiayaan ringan",
+      "Genosida",
+      "Perampokan"
+    ],
+    answer: "Genosida"
+  },
+  {
+    question: "Prinsip negara hukum Indonesia tercermin dalam...",
+    options: [
+      "Adanya kekuasaan tertinggi di tangan militer",
+      "Kebebasan mutlak tanpa batas",
+      "Kehidupan yang diatur sepenuhnya oleh pemerintah",
+      "Adanya supremasi hukum dan peradilan yang bebas"
+    ],
+    answer: "Adanya supremasi hukum dan peradilan yang bebas"
+  },
+  {
+    question: "Sikap toleransi terhadap perbedaan suku, agama, dan budaya menunjukkan pengamalan sila...",
+    options: [
+      "Kedua",
+      "Ketiga",
+      "Keempat",
+      "Kelima"
+    ],
+    answer: "Ketiga"
+  },
+  {
+    question: "Landasan hukum otonomi daerah di Indonesia adalah...",
+    options: [
+      "UUD 1945 Pasal 18",
+      "UU No. 40 Tahun 1999",
+      "PP No. 10 Tahun 1983",
+      "UU No. 39 Tahun 1999"
+    ],
+    answer: "UUD 1945 Pasal 18"
+  },
+  {
+    question: "Prinsip checks and balances dalam sistem ketatanegaraan Indonesia bertujuan untuk...",
+    options: [
+      "Membatasi hak rakyat",
+      "Memperkuat kekuasaan eksekutif",
+      "Mencegah penyalahgunaan kekuasaan antar lembaga",
+      "Memberi wewenang mutlak pada presiden"
+    ],
+    answer: "Mencegah penyalahgunaan kekuasaan antar lembaga"
+  },
+  {
+    question: "Salah satu bentuk partisipasi politik non-elektoral adalah...",
+    options: [
+      "Ikut dalam pemilu",
+      "Menjadi caleg",
+      "Mengkritisi kebijakan pemerintah melalui media",
+      "Mendaftar sebagai pemilih tetap"
+    ],
+    answer: "Mengkritisi kebijakan pemerintah melalui media"
+  }
 ]
 };
