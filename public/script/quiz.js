@@ -103,7 +103,7 @@ function showResult() {
   <div class="result-box">
     <h2>🎉 Kuis Selesai!</h2>
     <div>
-      <button onclick="window.location.href='result.html'">👀 Lihat Skor</button>
+      <button onclick="window.location.href='result.html'">Lihat Skor</button>
     </div>
   </div>
 `;
