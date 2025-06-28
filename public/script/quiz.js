@@ -92,15 +92,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // ⬇⬇ Ini tempat showResult masuk
-  function showResult() {
-    quizBgm.pause();
-    quizBgm.currentTime = 0;
+ function showResult() {
+  quizBgm.pause();
+  quizBgm.currentTime = 0;
 
-    localStorage.setItem("finalScore", score);
-    localStorage.setItem("totalQuestions", selectedQuestions.length);
-    window.location.href = "result.html";
-  }
+  localStorage.setItem("finalScore", score);
+  localStorage.setItem("totalQuestions", selectedQuestions.length);
+
+  // Tombol untuk lihat hasil skor agar bisa trigger musik
+  questionBox.innerHTML = `
+    <div class="result-box" style="text-align: center; background: transparent; box-shadow: none; border: none;">
+      <h2 style="color: white;">Kuis Selesai!</h2>
+      <button onclick="window.location.href='result.html'">Lihat Skor</button>
+    </div>
+  `;
+}
+
 });
 
 

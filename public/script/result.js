@@ -1,25 +1,51 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const score = parseInt(localStorage.getItem("finalScore")) || 0;
-  const total = parseInt(localStorage.getItem("totalQuestions")) || 0;
-  const playerName = localStorage.getItem("playerName") || "Pemain";
-  const subject = localStorage.getItem("quizSubject") || "-";
+document.addEventListener('DOMContentLoaded', () => {
+  const playerName = localStorage.getItem('playerName') || 'Pemain';
+  const subject = localStorage.getItem('quizSubject') || '-';
+  const score = parseInt(localStorage.getItem('finalScore')) || 0;
+  const total = parseInt(localStorage.getItem('totalQuestions')) || 0;
 
-  // Tampilkan ke halaman
-  document.getElementById("score-display").textContent = `${score} / ${total}`;
-  document.getElementById("player-name").textContent = playerName;
-  document.getElementById("subject-name").textContent = subject.replace("_", " ");
+  const resultBgm = document.getElementById("resultBgm");
 
-  // Tentukan file audio
-  const audioFile = score >= 7 ? "victory.mp3" : "lose.mp3";
-  const resultAudio = new Audio(`assets/sounds/${audioFile}`);
+  const nameEl = document.getElementById("player-name");
+  const subjectEl = document.getElementById("subject-name");
+  const scoreEl = document.getElementById("score-display");
+  const messageEl = document.getElementById("message-text");
 
-  // Coba autoplay musik dengan sedikit delay agar browser mengizinkan
-  setTimeout(() => {
-    resultAudio.play().catch((err) => {
-      console.warn("Autoplay dicegah, user harus klik dulu.");
-    });
-  }, 300);
+  nameEl.textContent = playerName;
+  subjectEl.textContent = subject;
+  scoreEl.textContent = `${score} / ${total}`;
+
+  const percentage = (score / total) * 100;
+  let message = "", audioSrc = "", color = "";
+
+  if (percentage === 100) {
+    message = "🏆 Sempurna! Kamu jenius!";
+    audioSrc = "assets/sounds/victory.mp3";
+    color = "lime";
+  } else if (percentage >= 70) {
+    message = "🔥 Bagus banget! Kamu hampir sempurna.";
+    audioSrc = "assets/sounds/victory.mp3";
+    color = "aqua";
+  } else if (percentage >= 40) {
+    message = "⚠️ Lumayan, bisa lebih baik!";
+    audioSrc = "assets/sounds/lose.mp3";
+    color = "orange";
+  } else {
+    message = "😢 Jangan menyerah! Coba lagi ya.";
+    audioSrc = "assets/sounds/lose.mp3";
+    color = "red";
+  }
+
+  messageEl.textContent = message;
+  messageEl.style.color = color;
+  scoreEl.style.color = color;
+
+  resultBgm.src = audioSrc;
+  resultBgm.play().catch(() => {
+    console.warn("Auto-play ditolak. User harus interaksi dulu.");
+  });
 });
+
 
 
 
