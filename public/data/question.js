@@ -408,5 +408,107 @@ bahasa_indonesia: [
     ],
     answer: "Buku itu dibaca oleh Sinta."
   }
+],
+ips: [
+  {
+    question: "Salah satu dampak negatif globalisasi dalam bidang ekonomi adalah...",
+    options: [
+      "Meningkatnya daya saing lokal",
+      "Berkurangnya lapangan kerja di sektor industri tradisional",
+      "Meningkatnya pendapatan negara",
+      "Meningkatnya inovasi produk lokal"
+    ],
+    answer: "Berkurangnya lapangan kerja di sektor industri tradisional"
+  },
+  {
+    question: "Fenomena urbanisasi yang tidak terkontrol dapat menyebabkan...",
+    options: [
+      "Penyebaran penduduk yang merata",
+      "Meningkatnya kualitas hidup di desa",
+      "Meningkatnya kepadatan penduduk di kota",
+      "Meningkatnya investasi di daerah"
+    ],
+    answer: "Meningkatnya kepadatan penduduk di kota"
+  },
+  {
+    question: "Tujuan utama dari sistem ekonomi campuran adalah...",
+    options: [
+      "Meningkatkan monopoli pasar",
+      "Menghapuskan peran negara",
+      "Menggabungkan keunggulan ekonomi pasar dan perencanaan",
+      "Menyerahkan seluruh kegiatan ekonomi kepada swasta"
+    ],
+    answer: "Menggabungkan keunggulan ekonomi pasar dan perencanaan"
+  },
+  {
+    question: "Kerajaan Sriwijaya terkenal sebagai kerajaan maritim karena...",
+    options: [
+      "Menguasai perdagangan jalur sutra",
+      "Mengandalkan pertanian sebagai ekonomi utama",
+      "Menguasai jalur perdagangan di Asia Tenggara",
+      "Berpusat di Pulau Jawa"
+    ],
+    answer: "Menguasai jalur perdagangan di Asia Tenggara"
+  },
+  {
+    question: "Salah satu bentuk stratifikasi sosial dalam masyarakat adalah...",
+    options: [
+      "Gotong royong",
+      "Kepemilikan kekayaan",
+      "Konflik sosial",
+      "Interaksi sosial"
+    ],
+    answer: "Kepemilikan kekayaan"
+  },
+  {
+    question: "Apa dampak dari inflasi yang tinggi terhadap masyarakat berpenghasilan tetap?",
+    options: [
+      "Pendapatan riil meningkat",
+      "Kemampuan daya beli menurun",
+      "Harga barang turun",
+      "Nilai uang stabil"
+    ],
+    answer: "Kemampuan daya beli menurun"
+  },
+  {
+    question: "Proklamasi kemerdekaan Indonesia pada 17 Agustus 1945 merupakan peristiwa yang menandai...",
+    options: [
+      "Penyerahan kekuasaan Jepang ke Belanda",
+      "Berakhirnya masa penjajahan Belanda secara resmi",
+      "Lahirnya negara Indonesia sebagai bangsa yang merdeka",
+      "Kemenangan Indonesia dalam Perang Dunia II"
+    ],
+    answer: "Lahirnya negara Indonesia sebagai bangsa yang merdeka"
+  },
+  {
+    question: "Faktor utama yang memengaruhi persebaran penduduk di Indonesia adalah...",
+    options: [
+      "Politik luar negeri",
+      "Kepercayaan budaya",
+      "Fasilitas transportasi dan lapangan kerja",
+      "Sistem pemerintahan"
+    ],
+    answer: "Fasilitas transportasi dan lapangan kerja"
+  },
+  {
+    question: "Prinsip dasar perdagangan internasional menurut teori keunggulan komparatif adalah...",
+    options: [
+      "Negara memproduksi semua barang sendiri",
+      "Negara mengimpor barang yang bisa diproduksi sendiri",
+      "Negara mengekspor barang yang paling efisien diproduksi",
+      "Negara melarang ekspor untuk melindungi industri"
+    ],
+    answer: "Negara mengekspor barang yang paling efisien diproduksi"
+  },
+  {
+    question: "Salah satu peran lembaga sosial adalah...",
+    options: [
+      "Menurunkan mobilitas sosial",
+      "Mendorong penyimpangan sosial",
+      "Menciptakan keteraturan sosial",
+      "Mengurangi integrasi masyarakat"
+    ],
+    answer: "Menciptakan keteraturan sosial"
+  }
 ]
 };
