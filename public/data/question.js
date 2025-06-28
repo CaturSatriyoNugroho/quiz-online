@@ -306,5 +306,107 @@ pkn: [
     ],
     answer: "Mengkritisi kebijakan pemerintah melalui media"
   }
+],
+bahasa_indonesia: [
+  {
+    question: "Makna kata 'elaborasi' dalam konteks penulisan ilmiah adalah...",
+    options: [
+      "Pemutakhiran data",
+      "Penggabungan gagasan",
+      "Pengembangan secara rinci",
+      "Penegasan ulang"
+    ],
+    answer: "Pengembangan secara rinci"
+  },
+  {
+    question: "Kalimat berikut yang termasuk kalimat majemuk bertingkat adalah...",
+    options: [
+      "Dia membaca buku dan menulis catatan.",
+      "Mereka belajar bersama di perpustakaan.",
+      "Saya akan datang jika hujan reda.",
+      "Kita pergi ke pantai minggu lalu."
+    ],
+    answer: "Saya akan datang jika hujan reda."
+  },
+  {
+    question: "Perbaikan kalimat tidak efektif berikut: 'Karena dia tidak hadir maka dia tidak mendapatkan informasi' adalah...",
+    options: [
+      "Dia tidak hadir karena tidak mendapatkan informasi.",
+      "Karena tidak mendapatkan informasi, maka dia tidak hadir.",
+      "Dia tidak hadir, sehingga tidak mendapat informasi.",
+      "Karena tidak hadir, dia tidak mendapatkan informasi."
+    ],
+    answer: "Karena tidak hadir, dia tidak mendapatkan informasi."
+  },
+  {
+    question: "Paragraf deduktif ditandai dengan kalimat utama yang terletak di...",
+    options: [
+      "Akhir paragraf",
+      "Awal paragraf",
+      "Tengah paragraf",
+      "Tidak tentu"
+    ],
+    answer: "Awal paragraf"
+  },
+  {
+    question: "Simpulan yang tepat dari pernyataan: 'Semua siswa yang rajin belajar lulus ujian. Budi tidak lulus ujian.' adalah...",
+    options: [
+      "Budi rajin belajar.",
+      "Budi pasti lulus tahun depan.",
+      "Budi tidak rajin belajar.",
+      "Budi tidak mengikuti ujian."
+    ],
+    answer: "Budi tidak rajin belajar."
+  },
+  {
+    question: "Kalimat bermajas berikut ini termasuk majas personifikasi, kecuali...",
+    options: [
+      "Angin malam berbisik lirih.",
+      "Mentari pagi tersenyum ramah.",
+      "Waktu berjalan begitu cepat.",
+      "Gunung menjulang tinggi ke langit."
+    ],
+    answer: "Gunung menjulang tinggi ke langit."
+  },
+  {
+    question: "Penulisan kutipan langsung panjang (lebih dari 4 baris) yang tepat dalam karya ilmiah adalah...",
+    options: [
+      "Dikutip dalam tanda kutip ganda tanpa paragraf baru.",
+      "Dibuat paragraf baru dan diberi margin kiri lebih dalam.",
+      "Diteruskan dalam kalimat tanpa keterangan sumber.",
+      "Ditulis dalam catatan kaki tanpa kutipan langsung."
+    ],
+    answer: "Dibuat paragraf baru dan diberi margin kiri lebih dalam."
+  },
+  {
+    question: "Sinonim kata 'absurd' dalam konteks kalimat 'Pernyataan itu terdengar absurd bagi logika' adalah...",
+    options: [
+      "Konyol",
+      "Logis",
+      "Realistis",
+      "Masuk akal"
+    ],
+    answer: "Konyol"
+  },
+  {
+    question: "Ciri utama teks eksposisi adalah...",
+    options: [
+      "Mengandung unsur cerita dan konflik",
+      "Bersifat imajinatif dan emotif",
+      "Menjelaskan gagasan dengan argumen logis",
+      "Berisi dialog antar tokoh"
+    ],
+    answer: "Menjelaskan gagasan dengan argumen logis"
+  },
+  {
+    question: "Jenis kalimat berikut yang termasuk kalimat pasif transitif adalah...",
+    options: [
+      "Buku itu dibaca oleh Sinta.",
+      "Sinta membaca buku di taman.",
+      "Kami sedang menulis laporan.",
+      "Dia berangkat ke sekolah pagi-pagi."
+    ],
+    answer: "Buku itu dibaca oleh Sinta."
+  }
 ]
 };
