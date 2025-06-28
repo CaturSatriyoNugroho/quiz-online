@@ -1,48 +1,54 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const resultBgm = document.getElementById('resultBgm');
-  document.body.addEventListener('click', () => {
-    if (resultBgm.paused) resultBgm.play();
-  }, { once: true });
-
   const name = localStorage.getItem("playerName") || "Pemain";
   const subject = localStorage.getItem("quizSubject") || "-";
   const score = parseInt(localStorage.getItem("finalScore")) || 0;
   const total = parseInt(localStorage.getItem("totalQuestions")) || 10;
 
-  // ...lanjut dengan logika tampil hasil
+  const playerEl = document.getElementById("player-name");
+  const subjectEl = document.getElementById("subject-name");
+  const scoreEl = document.getElementById("score-display");
+  const messageEl = document.getElementById("result-message");
+  const iconEl = document.getElementById("message-icon");
 
+  playerEl.textContent = name.toUpperCase();
+  subjectEl.textContent = subject;
 
-  // Format teks mapel: dari bahasa_inggris → Bahasa Inggris
-  const formattedSubject = subject.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  let message = "";
+  let icon = "";
+  let color = "";
+  let soundFile = "";
 
-  const percent = (score / total) * 100;
-  let message = "", icon = "", color = "";
+  const percentage = (score / total) * 100;
 
-  if (percent === 100) {
-    message = "Sempurna! Kamu jenius!";
-    icon = "🏆";
+  if (percentage === 100) {
+    message = "🏆 Sempurna! Kamu jenius!";
     color = "lime";
-  } else if (percent >= 70) {
-    message = "Bagus banget! Kamu hampir sempurna.";
-    icon = "🔥";
+    soundFile = "victory.mp3";
+  } else if (percentage >= 70) {
+    message = "🔥 Bagus banget! Kamu hampir sempurna.";
     color = "aqua";
-  } else if (percent >= 40) {
-    message = "Lumayan, bisa lebih baik!";
-    icon = "⚠️";
+    soundFile = "victory.mp3";
+  } else if (percentage >= 40) {
+    message = "⚠️ Lumayan, bisa lebih baik!";
     color = "orange";
+    soundFile = "lose.mp3";
   } else {
-    message = "Jangan menyerah! Coba lagi ya.";
-    icon = "😢";
+    message = "😢 Jangan menyerah! Coba lagi ya.";
     color = "red";
+    soundFile = "lose.mp3";
   }
 
-  document.getElementById("player-name").textContent = name.toUpperCase();
-  document.getElementById("subject-name").textContent = formattedSubject;
-  document.getElementById("message-icon").textContent = icon;
-  document.getElementById("result-message").textContent = message;
-  document.getElementById("score-display").textContent = `${score} / ${total}`;
-  document.getElementById("score-display").style.color = color;
-});
+  iconEl.textContent = message.match(/^\W+/)?.[0] || "";
+  messageEl.textContent = message.replace(/^\W+/, "");
+  scoreEl.textContent = `${score} / ${total}`;
+  scoreEl.style.color = color;
 
+  // 🔊 Play background music sesuai hasil
+  const resultBgm = new Audio(`assets/sounds/${soundFile}`);
+  resultBgm.loop = true;
+  document.body.addEventListener('click', () => {
+    resultBgm.play();
+  }, { once: true });
+});
 
 
