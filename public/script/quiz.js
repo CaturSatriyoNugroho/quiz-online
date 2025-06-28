@@ -92,21 +92,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
- function showResult() {
+function showResult() {
   quizBgm.pause();
   quizBgm.currentTime = 0;
 
   localStorage.setItem("finalScore", score);
   localStorage.setItem("totalQuestions", selectedQuestions.length);
 
-  // Tombol untuk lihat hasil skor agar bisa trigger musik
   questionBox.innerHTML = `
-    <div class="result-box" style="text-align: center; background: transparent; box-shadow: none; border: none;">
-      <h2 style="color: white;">Kuis Selesai!</h2>
-      <button onclick="window.location.href='result.html'">Lihat Skor</button>
+    <div class="result-box" style="text-align: center; padding: 2rem;">
+      <h2 style="font-size: 2rem; margin-bottom: 1rem; color: white; text-shadow: 0 0 10px var(--primary);">
+        Kuis Selesai!
+      </h2>
+      <button onclick="window.location.href='result.html'" style="padding: 0.8rem 1.5rem; font-size: 1rem; border-radius: 0.5rem; background-color: var(--accent); color: white; box-shadow: 0 0 10px var(--primary); transition: 0.3s;">
+        Lihat Skor
+      </button>
     </div>
   `;
 }
+
 
 });
 
