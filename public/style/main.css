@@ -1,116 +1,184 @@
-/* ====================== */
-/* 🌌 Background & Font   */
-/* ====================== */
+/* === Neon Blue + Black Theme === */
+:root {
+  --primary: #00ffff;
+  --accent: #004e92;
+  --danger: #ff4d4d;
+  --bg-dark: #000000;
+  --bg-light: #0a0a0a;
+  --white: #ffffff;
+  --gray: #ccc;
+}
+
+/* === Global === */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom right, #000000, #004e92);
-  color: white;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, var(--bg-dark), var(--accent));
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   overflow-x: hidden;
 }
 
-/* ====================== */
-/* 🧊 Login & Quiz Card   */
-/* ====================== */
+/* === Container === */
 .login-container,
-.game-wrapper,
-.result-box {
-  max-width: 400px;
-  margin: 5vh auto;
-  padding: 2rem;
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  box-shadow: 0 0 20px #00bfff;
+.game-wrapper {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 2rem 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px var(--primary);
+  width: 90%;
+  max-width: 480px;
   text-align: center;
+  animation: fadeIn 0.6s ease;
 }
 
-/* ====================== */
-/* 🎇 Neon Title & Logo   */
-/* ====================== */
+/* === Judul === */
 .game-title {
-  font-size: 3rem;
-  color: #00bfff;
-  text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff;
-  margin-bottom: 1rem;
-}
-
-.quiz-logo {
-  width: 80px;
-  margin-bottom: 1rem;
-}
-
-/* ====================== */
-/* 📝 Input Form          */
-/* ====================== */
-input, select, button {
-  width: 100%;
-  padding: 12px;
-  margin: 0.5rem 0;
-  border: none;
-  border-radius: 10px;
-  font-size: 1rem;
-}
-
-input, select {
-  background: #ffffff22;
-  color: white;
-  backdrop-filter: blur(5px);
-}
-
-button {
-  background: #00bfff;
-  color: black;
+  font-size: 2.5rem;
   font-weight: bold;
+  color: var(--primary);
+  text-shadow: 0 0 10px var(--primary), 0 0 20px var(--accent);
+  margin-bottom: 1rem;
+}
+
+/* === Input & Select === */
+input[type="text"],
+select {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 2px solid var(--primary);
+  border-radius: 0.5rem;
+  background-color: var(--bg-light);
+  color: var(--white);
+  margin-bottom: 1rem;
+  outline: none;
+  box-shadow: 0 0 10px transparent;
+  transition: box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  box-shadow: 0 0 10px var(--primary);
+}
+
+/* === Tombol Umum === */
+button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background-color: var(--accent);
+  color: var(--white);
+  border: none;
+  border-radius: 0.5rem;
   cursor: pointer;
-  transition: transform 0.2s;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px var(--accent);
 }
 
 button:hover {
-  transform: scale(1.05);
+  background-color: var(--primary);
+  color: #000;
+  box-shadow: 0 0 20px var(--primary);
 }
 
-/* ====================== */
-/* ❓ Soal & Opsi         */
-/* ====================== */
+/* === Soal & Pilihan === */
 .question-text {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 1rem;
 }
 
 .options-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.75rem;
+  margin-bottom: 1.2rem;
 }
 
 .option-btn {
-  background: #ffffff22;
-  color: white;
-  border: 1px solid #00bfff;
-  border-radius: 8px;
-  padding: 10px;
-  transition: all 0.2s;
+  background-color: transparent;
+  color: var(--white);
+  border: 2px solid var(--primary);
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
 }
 
 .option-btn:hover {
-  background: #00bfff;
-  color: black;
+  background-color: var(--primary);
+  color: #000;
+  box-shadow: 0 0 10px var(--primary);
 }
 
-.option-btn.correct {
-  background: lime;
-  color: black;
+/* === Status Jawaban === */
+.correct {
+  background-color: var(--primary);
+  color: #000;
+  border-color: var(--primary);
+  box-shadow: 0 0 10px var(--primary);
 }
 
-.option-btn.wrong {
-  background: red;
-  color: white;
+.wrong {
+  background-color: var(--danger);
+  color: #fff;
+  border-color: var(--danger);
+  box-shadow: 0 0 10px var(--danger);
 }
 
-/* ====================== */
-/* ⏳ Countdown           */
-/* ====================== */
+/* === Result Box === */
+.result-box {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 1rem;
+  box-shadow: 0 0 20px cyan;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* === Logo === */
+.quiz-logo {
+  width: 200px;
+  margin-bottom: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(0 0 10px cyan);
+  border-radius: 1rem;
+}
+
+/* === Player & Subject Name === */
+#player-name,
+#subject-name,
+h2,
+p {
+  display: inline;
+}
+
+/* === Animasi === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* === Responsive === */
+@media (max-width: 500px) {
+  .game-title {
+    font-size: 2rem;
+  }
+
+  .question-text {
+    font-size: 1.1rem;
+  }
+}
+
 .countdown-overlay {
   position: fixed;
   top: 0;
@@ -126,33 +194,11 @@ button:hover {
   font-weight: bold;
   text-shadow: 0 0 15px #00bfff, 0 0 30px #00bfff;
   z-index: 9999;
+  animation: fadeIn 0.3s ease-in-out;
 }
 
-/* ====================== */
-/* 🏁 Result Page         */
-/* ====================== */
-.result-box h2,
-.result-box p,
-.result-box h1 {
-  text-shadow: 0 0 10px currentColor, 0 0 20px currentColor;
-}
-
-.result-box h1 {
-  font-size: 3rem;
-}
-
-.result-box button {
-  background: #00bfff;
-  color: black;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: none;
-  margin-top: 1rem;
-  transition: background 0.3s;
-}
-
-.result-box button:hover {
-  background: white;
-  color: #004e92;
+/* Optional animation for smoother appearance */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }

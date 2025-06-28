@@ -8,14 +8,18 @@
 </head>
 <body>
   <audio id="quizBgm" src="assets/sounds/quiz.mp3" loop></audio>
-  <div id="countdown" class="countdown-overlay">3</div>
+  <div id="start-screen" class="login-container">
+    <button id="start-btn">Mulai Quiz</button>
+  </div>
+
+  <div id="countdown" class="countdown-overlay" style="display: none;">3</div>
 
   <div class="game-wrapper" id="question-box" style="display: none;">
     <div id="question-text" class="question-text">Loading soal...</div>
     <div id="options" class="options-container"></div>
     <button id="next-btn" style="display:none">Soal Selanjutnya</button>
   </div>
-  
+
   <div id="loading" style="text-align:center; font-size:1.2rem;">Loading soal...</div>
 
   <script src="data/question.js"></script>
