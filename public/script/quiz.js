@@ -99,15 +99,16 @@ function showResult() {
   localStorage.setItem("finalScore", score);
   localStorage.setItem("totalQuestions", selectedQuestions.length);
 
- questionBox.innerHTML = `
-<div class="result-box" style="
-  text-align: center;
-  padding: 2.5rem;
-  border-radius: 1rem;
-  background-color: rgba(0, 0, 0, 0.85);
-  max-width: 500px;
-  margin: 0 auto;
-">
+  questionBox.innerHTML = `
+  <div class="result-box" style="
+    text-align: center;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 0 0 20px var(--primary); /* Glow hanya di sini */
+    max-width: 500px;
+    margin: 0 auto;
+  ">
     <h2 style="
       font-size: 2.2rem;
       margin-bottom: 2rem;
@@ -118,26 +119,24 @@ function showResult() {
       🎉 Kuis Selesai!
     </h2>
 
-   <div style="margin-top: 1.5rem;">
-  <button onclick="window.location.href='result.html'" style="
-    padding: 0.9rem 2rem;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 0.5rem;
-    background: var(--accent);
-    color: white;
-    border: none;
-    outline: none;
-    box-shadow: 0 0 15px var(--primary); /* Hanya glowing luar */
-    cursor: pointer;
-    transition: all 0.3s ease;
-  ">
-    👀 Lihat Skor
-  </button>
-</div>
-
-`;
-
+    <div style="margin-top: 1.5rem;">
+      <button onclick="window.location.href='result.html'" style="
+        padding: 0.9rem 2rem;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 0.5rem;
+        background: var(--accent);
+        color: white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      ">
+        👀 Lihat Skor
+      </button>
+    </div>
+  </div>
+  `;
 }
 
 });
