@@ -1,6 +1,6 @@
 /* === Neon Blue + Black Theme === */
 :root {
-  --primary: #00ffff;
+  --primary: #00bfff;  /* UDAH DIGANTI dari cyan */
   --accent: #004e92;
   --danger: #ff4d4d;
   --bg-dark: #000000;
@@ -139,7 +139,7 @@ button:hover {
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 1rem;
-  box-shadow: 0 0 20px #00bfff;
+  box-shadow: 0 0 20px var(--primary);
   animation: fadeIn 1s ease-in-out;
 }
 
@@ -152,9 +152,9 @@ button:hover {
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
-  border: 4px solid #00bfff;
+  border: 4px solid var(--primary);
   object-fit: cover;
-  filter: drop-shadow(0 0 10px #00bfff);
+  filter: drop-shadow(0 0 10px var(--primary));
 }
 
 /* === Player & Subject Name === */
@@ -189,13 +189,13 @@ p {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.9);
-  color: #00bfff;
+  color: var(--primary);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 8rem;
   font-weight: bold;
-  text-shadow: 0 0 15px #00bfff, 0 0 30px #00bfff;
+  text-shadow: 0 0 15px var(--primary), 0 0 30px var(--primary);
   z-index: 9999;
   animation: fadeIn 0.3s ease-in-out;
 }
