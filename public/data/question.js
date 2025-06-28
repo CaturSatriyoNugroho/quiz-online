@@ -205,5 +205,4 @@ const questions = {
     answer: "Permukaan kasar dan gaya tekan besar"
   }
 ]
-
 };
