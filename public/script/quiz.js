@@ -99,44 +99,15 @@ function showResult() {
   localStorage.setItem("finalScore", score);
   localStorage.setItem("totalQuestions", selectedQuestions.length);
 
-  questionBox.innerHTML = `
-  <div class="result-box" style="
-    text-align: center;
-    padding: 2.5rem;
-    border-radius: 1rem;
-    background-color: rgba(0, 0, 0, 0.85);
-    box-shadow: 0 0 20px var(--primary); /* Glow hanya di sini */
-    max-width: 500px;
-    margin: 0 auto;
-  ">
-    <h2 style="
-      font-size: 2.2rem;
-      margin-bottom: 2rem;
-      font-weight: 700;
-      color: var(--white);
-      text-shadow: 0 0 10px var(--primary), 0 0 20px var(--accent);
-    ">
-      🎉 Kuis Selesai!
-    </h2>
-
-    <div style="margin-top: 1.5rem;">
-      <button onclick="window.location.href='result.html'" style="
-        padding: 0.9rem 2rem;
-        font-size: 1rem;
-        font-weight: bold;
-        border-radius: 0.5rem;
-        background: var(--accent);
-        color: white;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        transition: all 0.3s ease;
-      ">
-        👀 Lihat Skor
-      </button>
+ questionBox.innerHTML = `
+  <div class="result-box">
+    <h2>🎉 Kuis Selesai!</h2>
+    <div>
+      <button onclick="window.location.href='result.html'">👀 Lihat Skor</button>
     </div>
   </div>
-  `;
+`;
+
 }
 
 });
