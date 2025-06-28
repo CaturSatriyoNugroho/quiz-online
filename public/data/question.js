@@ -510,5 +510,107 @@ ips: [
     ],
     answer: "Menciptakan keteraturan sosial"
   }
-]
+],
+pjok: [
+  {
+     question: "Apa fungsi utama dari *karbohidrat kompleks* dalam kegiatan olahraga jangka panjang?",
+      options: [
+        "Meningkatkan kekuatan otot",
+        "Sumber energi berkelanjutan",
+        "Mempercepat metabolisme protein",
+        "Meningkatkan konsumsi oksigen"
+      ],
+      answer: "Sumber energi berkelanjutan"
+    },
+    {
+      question: "Dalam permainan bola voli, teknik 'jump serve' memiliki keunggulan utama dalam hal...",
+      options: [
+        "Menghemat tenaga server",
+        "Mengurangi kecepatan bola",
+        "Meningkatkan akurasi servis",
+        "Menambah kecepatan dan tekanan bola"
+      ],
+      answer: "Menambah kecepatan dan tekanan bola"
+    },
+    {
+      question: "Salah satu risiko dari latihan beban berlebihan tanpa istirahat yang cukup adalah...",
+      options: [
+        "Osteoporosis",
+        "Overtraining syndrome",
+        "Disfungsi liver",
+        "Hipoglikemia akut"
+      ],
+      answer: "Overtraining syndrome"
+    },
+    {
+      question: "Apa nama fase detak jantung ketika jantung berkontraksi dan memompa darah ke arteri?",
+      options: [
+        "Diastol",
+        "Sistol",
+        "Ventrikulasi",
+        "Relaksasi atrium"
+      ],
+      answer: "Sistol"
+    },
+    {
+      question: "Dalam permainan sepak bola, strategi *pressing* bertujuan untuk...",
+      options: [
+        "Mengurangi stamina lawan",
+        "Menutup ruang serangan lawan",
+        "Meningkatkan ball possession",
+        "Menciptakan offside trap"
+      ],
+      answer: "Menutup ruang serangan lawan"
+    },
+    {
+      question: "Gerakan sit-up terutama melatih otot bagian...",
+      options: [
+        "Dada",
+        "Punggung bawah",
+        "Abdomen (perut)",
+        "Lengan atas"
+      ],
+      answer: "Abdomen (perut)"
+    },
+    {
+      question: "Kadar maksimal VO₂ max seseorang menggambarkan...",
+      options: [
+        "Kekuatan otot kaki",
+        "Kapasitas paru untuk mengatur suhu",
+        "Kemampuan tubuh mengonsumsi oksigen saat latihan intens",
+        "Kemampuan jantung dalam memompa darah istirahat"
+      ],
+      answer: "Kemampuan tubuh mengonsumsi oksigen saat latihan intens"
+    },
+    {
+      question: "Pernyataan berikut yang **benar** tentang pemanasan adalah...",
+      options: [
+        "Hanya perlu dilakukan sebelum olahraga berat",
+        "Bertujuan mendinginkan tubuh sebelum latihan",
+        "Mencegah cedera dan meningkatkan performa",
+        "Tidak memengaruhi kecepatan reaksi"
+      ],
+      answer: "Mencegah cedera dan meningkatkan performa"
+    },
+    {
+      question: "Dalam atletik, nomor lari jarak menengah meliputi lari dengan jarak...",
+      options: [
+        "100m dan 200m",
+        "400m dan 800m",
+        "800m dan 1500m",
+        "3000m dan 5000m"
+      ],
+      answer: "800m dan 1500m"
+    },
+    {
+      question: "Zat berikut yang **dihindari** atlet karena dapat menurunkan daya tahan tubuh adalah...",
+      options: [
+        "Elektrolit",
+        "Kreatin",
+        "Kafein",
+        "Alkohol"
+      ],
+      answer: "Alkohol"
+    }
+  ]
 };
