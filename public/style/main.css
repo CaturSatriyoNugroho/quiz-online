@@ -26,21 +26,6 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
 }
-
-body::after {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  pointer-events: none;
-  background: url('assets/neon-particles.png');
-  background-size: cover;
-  opacity: 0.08;
-  z-index: 0;
-}
-
 /* === Container === */
 .login-container,
 .game-wrapper {
